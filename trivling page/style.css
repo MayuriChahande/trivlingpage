@@ -1,0 +1,179 @@
+/*navigation Bar*/
+* {
+	margin: 0px;
+	padding: 0px;
+}
+html {
+	scroll-behavior: smooth;
+}
+.navbar::before {
+	content: "";
+	background-color: rgb(8, 8, 8);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.7;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	position: sticky;
+	top: 0px;
+}
+.navbar img {
+	height: 72px;
+	width: 85px;
+	padding: 9px 11px;
+	border-radius: 59px;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+}
+a:hover {
+	background: rgb(255, 254, 254);
+	border-radius: 13px;
+	color: black;
+	box-shadow: 6px 2px rgb(5, 0, 0);
+}
+a {
+	text-decoration: none;
+	padding: 0px 45px;
+	font-size: 1.4rem;
+	font-family: Fasthand;
+	color: rgba(237, 230, 230, 0.929);
+}
+
+/*-------------------------------------------------------------------*/
+/*Home Section */
+#Home::before {
+	content: "";
+
+	background-image: linear-gradient(rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0.363)),
+		url(/images/books.jpg);
+	background-size: 100% 100%;
+
+	/*  relative to position of its parent [box1] and is not lave space */
+	position: absolute;
+
+	height: 70%;
+	width: 100%;
+	z-index: -1;
+	opacity: 100;
+}
+#Home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 4rem;
+	height: 22vh;
+}
+.btn {
+	margin-top: 2rem;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	box-shadow: 5px 2px #0a0a0a;
+}
+
+/*----------------------------------------------------*/
+
+/*services section*/
+#services-container {
+	height: 38rem;
+}
+#services-container .h-primary {
+	color: #0a0a0a;
+}
+.services {
+	display: flex;
+	margin: -7rem center;
+	text-align: center;
+}
+.box {
+	border: 2px solid black;
+	margin: -7rem 1rem;
+	border-radius: 2rem;
+	background: #b1ead5;
+	padding: 2rem;
+	box-shadow: 1rem 0.6rem #000000;
+}
+.services img {
+	height: 100px;
+	width: 200px;
+}
+.services p {
+	color: #0a0a0a;
+}
+
+/*----------------------------------------------------*/
+/* contact section*/
+.h {
+	color: rgb(15, 15, 15);
+	font-size: 3.5rem;
+	font-family: cursive;
+	text-align: center;
+}
+.form {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0.363)),
+		url(/images/contact.jpg);
+	background-size: 100% 100%;
+	border: 2px solid black;
+	margin: 1.5rem 3rem;
+	border-radius: 4rem;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 1.5rem;
+}
+.form input {
+	text-align: center;
+	padding: 0.5rem;
+	margin: 0.5rem;
+	width: 300px;
+	border-radius: 11px;
+}
+.submit {
+	margin: 0.5rem;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	box-shadow: 5px 2px #0a0a0a;
+}
+
+/*-------------------------------------------*/
+/*Footer*/
+.foot {
+	text-align: center;
+	padding: 1rem;
+}
+
+/*------------------------------------------------------*/
+/*Utility class*/
+.h-primary {
+	color: aliceblue;
+	font-size: 3.5rem;
+	margin: 3rem;
+	padding: 6rem;
+	font-family: cursive;
+	text-align: center;
+}
+.h2-primary {
+	color: rgb(4, 4, 4);
+	font-size: 1.5rem;
+	padding: 1rem;
+	font-family: cursive;
+}
+.center {
+	color: aliceblue;
+	font-size: -1rem;
+	font-family: sans-serif;
+	margin-top: -7rem;
+}

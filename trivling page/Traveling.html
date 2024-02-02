@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FunLife</title>
+	</head>
+	<style>
+		* {
+			box-sizing: border-box; /* by using this the border padding margin is not change is set by user*/
+			font-family: caprasimo;
+			color: rgb(91, 71, 71);
+			font-size: 16px;
+		}
+		body {
+			background-image: url("/images/travel.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+
+		}
+
+
+		.left {
+			/* border: 2px solid red; */
+			margin: 10px;
+			display: inline-block; /* By apling this poperty , the  block nelemet convert into inlile element  */
+			margin-left: 20px;
+			position: absolute; /** this property set absolute according toparent {in this prog parent of left iv is header } */
+			top: 22px;
+		}
+		#logo{
+			position: absolute;
+			left:920px;
+			top:150px;
+			border-radius: 92px;
+		  width:80px;
+		  height: 80px;
+		}
+		.center {
+			/* If u have  any block in center  then u have to set above properties
+			           1 st = display:block ;
+								 2nd =  width: 33%*  u have tp set width according ur requirement
+								 3rd  margin:12px  auto*/
+			display: block; /* By apling this poperty , the  block nelemet convert into inlile element  */
+			width: 40%;
+			margin: 19px auto;
+			/* border: 2px solid red; */
+		}
+		li {
+			display: inline-block; /*using this property all text are in one single line*/
+			/* text-align: center; */
+		}
+		a {
+			text-decoration: none; /* using this  the undderline will remove */
+			padding: 20px;
+		}
+		a:hover {
+			color: rgb(133, 108, 108);
+		}
+		/* .right {
+			border: 2px solid red;
+			margin: 10px;
+			display: inline-block; By apling this poperty , the  block nelemet convert into inlile element
+			position: absolute;
+			right: 25px;
+			top: 22px; */
+		/* } */
+		.form {
+			border: 2px solid black;
+			border-radius: 20px;
+			margin-left:900px;
+			margin-top: 100px;
+			padding: 50px 109px;
+			width: 500px;
+			background:rgb(104, 154, 240)
+		}
+		.form h1{
+			text-align: center;
+			font-size:30px;
+		}
+		input {
+			border-radius: 8px;
+			display: block;
+			padding: 8px;
+			margin: 10px;
+		}
+		#btn{
+			border-radius:10px;:
+		}
+	</style>
+	<body>
+		<header>
+			<div class="left"></div>
+			<div class="center">
+				<nav class="nav">
+					<ul>
+						<li><a href="$">Home</a></li>
+						<li><a href="$">Abuot Us</a></li>
+						<li><a href="$">Activities and Eventst</a></li>
+						<li><a href="$">Cotact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="right"></div>
+		</header>
+		<div class="form">
+			<img id="logo" src="FunLife.jpeg" alt="not availabe" />
+			<h1>Fill your details</h1>
+			<form action="submit.php">
+				<input type="text" placeholder="Enter your Name" />
+				<input type="text" placeholder="Enter  your Age " />
+				<input type="text" placeholder="Enter  your City Name " />
+				<input type="text" placeholder=" Enter  your Email ID" />
+				<input type="text" placeholder=" Enter  your Contact No" />
+				<input id="btn" type="Submit" value="Submit" />
+			</form>
+		</div>
+	</body>
+</html>
